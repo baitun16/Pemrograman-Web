@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator Sederhana</title>
+</head>
+<script language="javascript">
+	function tambah (){	
+		x=eval(form.x.value)
+		y=eval(form.y.value)
+		c=x+y
+		form.hasil.value= c
+	}
+	function kurang(){
+		x=eval(form.x.value)
+		y=eval(form.y.value)
+		c=x-y
+		form.hasil.value=c
+	}
+	function bagi (){
+		x=eval(from.x.value)
+		y=eval(form.y.value)
+		c=x/y
+		form.hasil.value=c
+	}
+	function kali (){
+		x=eval(form.x.value)
+		y=eval(form.y.value)
+		c=x*y
+		form.hasil.value=c
+	}
+	function kuadrat(){
+		x=eval(form.x.value)
+		y=eval(form.y.value)
+		c=Math.pow(x,y)
+		form.hasil.value=c
+	}
+	function clear(){
+		form.x.value=""
+		form.y.value=""
+		form.hasil.value=""
+	}
+	function sms(){
+		alert ("Selamat Berhitung . . .")
+	}
+	document.write("Dimodifikasi terakhir pada:" +document.lastModified);	
+</script>
+
+<body onload=sms() >
+	<center>
+		<font size="5" color="009999" style="border:2px solid #2F4F4F">Tugas 2 Kalkulator Sederhana</font>
+		<br></br>
+		<br></br>
+		<form name="form">
+			<p for="bil1">Angka 1</p>
+			<input type="number" name="x" style="border-color: blue;">			
+			<p for="bil2">Angka 2</p>
+			<input type="number" name="y" style="border-color: blue;">
+			<br></br>
+			Hasil: <input type="number" name="hasil" disabled="true">
+			<p></p>
+			<p></p>
+			<input type="button" value="+" onclick="tambah()">
+			<input type="button" value="-" onclick="kurang()">
+			<input type="button" value="/" onclick="bagi()">
+			<input type="button" value="*" onclick="kali()">
+			<input type="button" value="^" onclick="kuadrat()">
+			<input type="reset" value="Clear" style="background-color: red;"onclick="clear()">		
+		</form>
+	</center>
+</body>
+</html>
