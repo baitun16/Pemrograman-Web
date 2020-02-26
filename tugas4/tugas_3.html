@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		div{
+			height: 150px;
+			width: 250px;
+			background-color: yellow;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+		<div border="1px"></div>
+		<p></p>
+	<button class="fadeout">Fade Out</button>
+	<button class="fadein">Fade In</button>
+	<button class="fadeto">Fade To 0.3</button>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".fadeout").click(function(){
+				$("div").fadeOut();
+			});
+			$(".fadein").click(function(){
+				$("div").fadeIn();
+			});
+			$(".fadeto").click(function(){
+				$("div").fadeTo("slow", 0.3);
+			});
+		});
+	</script>
+</body>
+</html>
