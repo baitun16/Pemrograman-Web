@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #191970;
+}
+ 
+.header {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+.header h5 {
+    font-family: Elephant;
+}
+ 
+.nav {
+    overflow: hidden;
+    background-color: #191970;
+}
+ 
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: #ddd;
+    color: blue;
+    text-decoration:underline;
+}
+ 
+.content {   
+    float: left;
+    width: 75%;
+}
+.card {
+     background-color: white;
+     padding: 10px;
+}
+.img {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+.kotak{
+    padding: 10px;
+    border: 2px solid blue;
+}
+ 
+.sui {
+    float: left;
+    width: 25%;
+    height: 200px;
+    background-color: #f1f1f1;
+    padding-left: 10px;
+}
+.widget{
+     background-color: white;
+     padding: 5px;
+     margin-top: 10px;   
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+    overflow: hidden;
+    background-color: #000000;
+}
+.footer p{
+    color: #fff;
+    margin-left: 10px;
+}
+
+/*css untuk konten pendaftaran*/
+
+.leftlinks {
+    border:1px solid #22476C; 
+    padding: 5px;
+    margin: 5px;
+    text-align: middle; 
+    background-color: #336699; 
+    width: 150px; 
+}
+.leftlinks a {
+    display: block; 
+    margin: 3px 0px;
+    border-top: 1px solid #4C86C0; 
+    border-left: 1px solid #4C86C0;
+    border-right: 1px solid #22476C; 
+    border-bottom: 1px solid #22476C; 
+    padding: 4px 10px;
+    text-align: center; 
+    background-color: #336699;
+    color: #EDEDED; 
+    text-decoration: none;
+}
+.leftlinks a:link {
+    color: #EDEDED;
+}
+.leftlinks a:visited {
+    color: #EDEDED
+}
+.leftlinks a:hover {
+    display: block; 
+    margin: 3px 0px;
+    border-top: 1px solid #22476C; 
+    border-left: 1px solid #22476C;
+    border-bottom: 1px solid #4C86C0; 
+    border-right: 1px solid #4C86C0; 
+    padding: 5px 9px 3px 11px;
+    text-align: center; 
+    background-color: #336699; 
+    color: #EED929; 
+    text-decoration: none;
+}
